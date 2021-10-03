@@ -2,9 +2,6 @@
 @section('content')
     <div class="container">
         <div class="row">
-            @php
-                //dd($today)
-            @endphp
             <div class="table-responsive">
                 <table class="table table-striped table-hover align-middle">
                     <thead class="table-dark">

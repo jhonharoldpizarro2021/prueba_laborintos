@@ -3,18 +3,6 @@
 <div class="container-fluid text-center">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            @php
-            /* if($key == 0){
-                dd($item);
-            } else{
-                dd($item[$key]);
-            }; */
-
-            //dd($item[$key]);
-
-
-               
-            @endphp
             <div class="card ">
                 <div class="has-animation animation-rtl" data-delay="2000">
                     <img src="{{ $item[$key]['url'] }}" class="card-img-top" alt="{{ $item[$key]['title'] }}">

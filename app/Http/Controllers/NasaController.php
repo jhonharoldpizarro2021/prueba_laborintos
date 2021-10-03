@@ -17,7 +17,6 @@ class NasaController extends Controller
         $today = date('Y-m-d');
         $date_past = strtotime('-7 day', strtotime($today));
         $date_past = date('Y-m-d', $date_past);
-
         $nasa = HTTP::get('https://api.nasa.gov/planetary/apod?api_key=pQe5fmYcjKvC1UJiVZed5WAqFmBaR9vHduBxro4o&start_date='.$date_past.'&end_date='.$today);
         $datos = $nasa->json();
         return view('welcome', compact('datos','today','date_past'));
@@ -55,15 +54,10 @@ class NasaController extends Controller
         $today = date('Y-m-d');
         $date_past = strtotime('-7 day', strtotime($today));
         $date_past = date('Y-m-d', $date_past);
-
         $nasa = HTTP::get('https://api.nasa.gov/planetary/apod?api_key=pQe5fmYcjKvC1UJiVZed5WAqFmBaR9vHduBxro4o&start_date='.$date_past.'&end_date='.$today);
         $datos = $nasa->collect();
-        
         $item = $datos->where('title', $title);
-        //$item = $item->toJson();
         $key = $k;
-      
-
         return view('show', compact('datos','today','date_past','item','key'));
     }
 
