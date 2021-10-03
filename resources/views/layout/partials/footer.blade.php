@@ -16,5 +16,12 @@
                 });
             });
         });
+
+        if ("loading" in HTMLImageElement.prototype) {
+            console.log("Browser support `loading`...");
+        } else {
+            console.log("Not supported");
+        }
+
     </script>
 </footer>

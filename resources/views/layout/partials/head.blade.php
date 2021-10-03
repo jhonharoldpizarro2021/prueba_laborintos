@@ -23,9 +23,10 @@
         color: #ffffff80;
     }
 
-    img{
+    img, .img{
         width: 400px!important;
         max-height: 400px;
+        margin: 0 auto;
     }
     .has-animation {
         position: relative;
