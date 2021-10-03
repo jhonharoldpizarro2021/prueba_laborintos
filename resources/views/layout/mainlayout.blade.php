@@ -6,7 +6,9 @@
 </head>
 
 <body>
-    @include('layout.partials.header')
+    @if (request()->route()->getName() === 'index')
+        @include('layout.partials.header')
+    @endif
     @yield('content')
     @include('layout.partials.footer')
     @include('layout.partials.footer-scripts')

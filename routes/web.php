@@ -18,6 +18,6 @@ use App\Http\Controllers\NasaController;
     return view('welcome');
 }); */
 
-Route::get('/', [NasaController::class, 'index']);
+Route::get('/', [NasaController::class, 'index'])->name('index');
 
 Route::get('/{title}/{key}', [NasaController::class, 'show']);
