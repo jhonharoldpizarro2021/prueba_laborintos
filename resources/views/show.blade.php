@@ -7,17 +7,16 @@
                 <div class="card-header">
                     <div class="has-animation animation-ltr" data-delay="10">
                         <h3 class="card-title">{{ $item[$key]['title'] }}</h3>
+                        <small class="card-text">{{ $item[$key]['date'] }}</small>
                     </div>
                   </div>
-                
                 <div class="card-body">
-                    <div class="has-animation animation-rtl img" data-delay="2000">
-                        <img loading="lazy" src="{{ $item[$key]['url'] }}" class="card-img-top img-fluid" alt="{{ $item[$key]['title'] }}">
+                    <div class="has-animation animation-rtl img" data-delay="300">
+                        <img loading="lazy" src="{{ $item[$key]['url'] }}" class="card-img-top img-fluid img-thumbnail" alt="{{ $item[$key]['title'] }}">
                     </div>
                 </div>
                 <div class="card-body">
-                    <small class="card-text">{{ $item[$key]['date'] }}</small>
-                    <div class="has-animation animation-rtl" data-delay="1000">
+                    <div class="has-animation animation-ltr" data-delay="600">
                         <p class="card-text">{{ $item[$key]['explanation'] }}</p>
                     </div>
                     <button type="button" class="btn btn-primary back">

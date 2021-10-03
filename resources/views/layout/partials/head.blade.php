@@ -27,6 +27,7 @@
         width: 400px!important;
         max-height: 400px;
         margin: 0 auto;
+        background-color: #ccc;
     }
     .has-animation {
         position: relative;
