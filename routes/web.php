@@ -20,4 +20,4 @@ use App\Http\Controllers\NasaController;
 
 Route::get('/', [NasaController::class, 'index']);
 
-Route::get('/{title}', [NasaController::class, 'show']);
+Route::get('/{title}/{key}', [NasaController::class, 'show']);
