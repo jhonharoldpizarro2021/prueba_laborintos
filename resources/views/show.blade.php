@@ -12,7 +12,7 @@
                 
                 <div class="card-body">
                     <div class="has-animation animation-rtl" data-delay="2000">
-                        <img src="{{ $item[$key]['url'] }}" class="card-img-top" alt="{{ $item[$key]['title'] }}">
+                        <img src="{{ $item[$key]['url'] }}" class="card-img-top img-fluid" alt="{{ $item[$key]['title'] }}">
                     </div>
                 </div>
                 <div class="card-body">

@@ -22,6 +22,11 @@
     button a:hover {
         color: #ffffff80;
     }
+
+    img{
+        width: 400px!important;
+        max-height: 400px;
+    }
     .has-animation {
         position: relative;
     }
